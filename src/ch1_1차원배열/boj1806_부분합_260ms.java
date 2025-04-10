@@ -5,8 +5,8 @@ import java.util.*;
 
 public class boj1806_부분합_260ms {
     public static void main(String[] args) throws Exception{
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        // BufferedReader br = new BufferedReader(new FileReader("input.txt"));
+        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new FileReader("input.txt"));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = Integer.parseInt(st.nextToken()); // 수열 길이 10~100000
         int S = Integer.parseInt(st.nextToken()); // 합 S 이상
@@ -37,6 +37,6 @@ public class boj1806_부분합_260ms {
         }
 
         System.out.println(min_length==100001 ? 0 : min_length); // 합이 S 이상이 될 수 없으면 0 출력
-        // br.close();
+        br.close();
     }
 }
