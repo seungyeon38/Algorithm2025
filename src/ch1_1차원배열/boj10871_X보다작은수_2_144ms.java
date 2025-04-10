@@ -1,7 +1,9 @@
+package ch1_1차원배열;
+
 import java.io.*;
 import java.util.*;
 
-public class boj10871_X보다작은수_1_168ms {
+public class boj10871_X보다작은수_2_144ms {
     public static void main(String[] args) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // BufferedReader br = new BufferedReader(new FileReader("input.txt"));
@@ -11,19 +13,13 @@ public class boj10871_X보다작은수_1_168ms {
         int X = Integer.parseInt(st.nextToken()); // 기준 정수
 
         st = new StringTokenizer(br.readLine());
-        List<Integer> list = new ArrayList<>();
-        
+        StringBuilder sb = new StringBuilder();
+
         for(int i=0; i<N; i++){
             int n = Integer.parseInt(st.nextToken());
             if(n < X){
-                list.add(n);
+                sb.append(n).append(" ");
             }
-        }
-
-        int length = list.size();
-        StringBuilder sb = new StringBuilder();
-        for(int i=0; i<length; i++){
-            sb.append(list.get(i)).append(" ");
         }
 
         System.out.println(sb.toString());

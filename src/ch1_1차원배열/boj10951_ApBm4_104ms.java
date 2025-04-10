@@ -1,3 +1,5 @@
+package ch1_1차원배열;
+
 import java.util.*;
 import java.io.*;
 
@@ -20,4 +22,3 @@ public class boj10951_ApBm4_104ms {
         // br.close();
     }
 }
-₩

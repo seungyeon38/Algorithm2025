@@ -1,3 +1,5 @@
+package ch1_1차원배열;
+
 import java.io.*;
 
 public class boj8958_OX퀴즈_2_104ms{

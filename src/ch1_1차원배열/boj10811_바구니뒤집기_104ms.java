@@ -1,3 +1,5 @@
+package ch1_1차원배열;
+
 import java.util.*;
 import java.io.*;
 

@@ -1,3 +1,5 @@
+package ch1_1차원배열;
+
 import java.io.*;
 
 public class boj3052_나머지_1_104ms { 
