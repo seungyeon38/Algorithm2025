@@ -1,0 +1,6 @@
+*.class
+input.txt
+practice.java
+
+/bin/
+.vscode/
