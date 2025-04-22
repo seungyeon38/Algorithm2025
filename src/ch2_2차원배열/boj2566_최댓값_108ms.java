@@ -25,7 +25,7 @@ public class boj2566_최댓값_108ms {
                 }
             }
         }
-
+        
         StringBuilder sb = new StringBuilder();
         sb.append(max).append("\n").append(r).append(" ").append(c);
 
