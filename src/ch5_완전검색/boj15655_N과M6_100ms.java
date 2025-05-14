@@ -9,7 +9,7 @@ public class boj15655_N과M6_100ms {
     static int[] selected_arr;
     static StringBuilder sb = new StringBuilder();
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         // BufferedReader br = new BufferedReader(new FileReader("input.txt"));
 
@@ -21,10 +21,10 @@ public class boj15655_N과M6_100ms {
         selected_arr = new int[M];
 
         st = new StringTokenizer(br.readLine());
-        for(int i=0; i<N; i++){
+        for (int i = 0; i < N; i++) {
             numbers[i] = Integer.parseInt(st.nextToken());
         }
-        
+
         Arrays.sort(numbers);
 
         calc(0, 0);
@@ -33,9 +33,9 @@ public class boj15655_N과M6_100ms {
         // br.close();
     }
 
-    public static void calc(int cnt, int sp){
-        if(cnt == M){
-            for(int i=0; i<M; i++){
+    public static void calc(int cnt, int sp) {
+        if (cnt == M) {
+            for (int i = 0; i < M; i++) {
                 sb.append(selected_arr[i]).append(" ");
             }
             sb.append("\n");
@@ -43,9 +43,9 @@ public class boj15655_N과M6_100ms {
             return;
         }
 
-        for(int i=sp; i<N; i++){
+        for (int i = sp; i < N; i++) {
             selected_arr[cnt] = numbers[i];
-            calc(cnt+1, i+1);
+            calc(cnt + 1, i + 1);
         }
     }
 }
