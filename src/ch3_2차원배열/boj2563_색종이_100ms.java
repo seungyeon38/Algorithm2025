@@ -1,4 +1,4 @@
-package ch2_2차원배열;
+package ch3_2차원배열;
 
 import java.util.*;
 import java.io.*;

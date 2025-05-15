@@ -1,4 +1,4 @@
-package ch3_완전검색;
+package ch5_완전검색;
 
 import java.util.*;
 import java.io.*;

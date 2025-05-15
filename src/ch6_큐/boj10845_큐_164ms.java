@@ -1,4 +1,4 @@
-package ch5_큐;
+package ch6_큐;
 
 import java.io.*;
 import java.util.*;
